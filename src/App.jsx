@@ -1,23 +1,24 @@
 // compenents
 import Header from "./components/Header.jsx";
-import { Post } from "./components/Post.jsx";
+import Post from "./components/Post.jsx";
+import Sidebar from "./components/Sidebar.jsx";
 
 // styles
-import './global.css';
+import "./global.css";
+import styles from "./App.module.css";
+
 
 function App() {
   return (
     <div>
       <Header />
-      <h1>Olá, Mundo</h1>
-      <Post 
-      author='pedro'
-      content="hdjdkjdkdkj jdjdkdk" 
-      />
-      <Post 
-      author='Lucas'
-      content="hdjdkjdkdkj jdjdkdk" 
-      />
+
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>
+          <Post  />
+        </main>
+      </div>
     </div>
   );
 }

@@ -1,8 +1,8 @@
+// styles
 import styles from './Header.module.css';
 
+// components
 import feedLogo from '../assets/feed-logo.svg';
-
-console.log(feedLogo)
 
 export default function Header() {
   return (
