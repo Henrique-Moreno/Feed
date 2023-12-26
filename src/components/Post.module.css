@@ -110,6 +110,7 @@
   transition: background-color 0.1s;
 }
 
+/* validação no css desabled estiver desabilitado vai ficar de uma cor diferente */
 .commentForm button[type=submit]:not(:disabled):hover {
   background: var(--green-300);
 }
